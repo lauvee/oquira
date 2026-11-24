@@ -58,16 +58,15 @@ All financial information used in the initial versions is synthetic. Oquira does
 
 Oquira is developed in public. Contributions, discussions, research and constructive feedback are welcome.
 
-Please read the contribution guidelines before submitting changes.
+Please read the [contribution guidelines](CONTRIBUTING.md) before submitting changes. All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
-The source code is intended to be distributed under the Apache License 2.0.
+The source code is licensed under the [Apache License 2.0](LICENSE).
 
-Documentation is intended to be distributed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+Documentation is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-DOCS).
 
-See the repository license files for the applicable terms.
-
+See the respective license files for applicable terms.
 ---
 
 **Built in public. Open to collaboration.**
