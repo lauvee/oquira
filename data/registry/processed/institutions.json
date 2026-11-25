@@ -1,0 +1,2346 @@
+﻿{
+    "schemaVersion":  "1.0.0",
+    "dataset":  "SB Institutional Registry",
+    "source":  "Superintendencia de Bancos de la República Dominicana",
+    "sourceFile":  "sb-authorized-entities-2018-2026.csv",
+    "generatedFrom":  "sb-institutional-history.csv",
+    "identityPolicy":  "Normalized source name and category; not a verified legal identity.",
+    "institutions":  [
+                         {
+                             "id":  "sb-449b34ce030c84164990",
+                             "name":  "AGENTE DE CAMBIO AGOSTO DIAZ, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO AGOSTO DIAZ, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO AGOSTO DIAZ, S. A."
+                                             ],
+                             "firstObserved":  "2019-08",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  4
+                         },
+                         {
+                             "id":  "sb-7abf3f0c471a8900363f",
+                             "name":  "AGENTE DE CAMBIO AGOSTO PENA \u0026 ASOC., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO AGOSTO PENA \u0026 ASOC., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO AGOSTO PENA \u0026 ASOC., S. A."
+                                             ],
+                             "firstObserved":  "2019-08",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  4
+                         },
+                         {
+                             "id":  "sb-30131ec2a3457449c84f",
+                             "name":  "AGENTE DE CAMBIO ALEYBRA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO ALEYBRA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO ALEYBRA, S. A.",
+                                                 "Agente de Cambio Aleybra, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-c3f555744732ea46dc94",
+                             "name":  "AGENTE DE CAMBIO CENTRO DOLLAR CD, S. A",
+                             "normalizedName":  "AGENTE DE CAMBIO CENTRO DOLLAR CD, S. A",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO CENTRO DOLLAR CD, S. A",
+                                                 "Agente de Cambio Centro Dollar CD, S. A"
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2025-03",
+                             "observationCount":  65
+                         },
+                         {
+                             "id":  "sb-37c3905f75f00fc70a09",
+                             "name":  "AGENTE DE CAMBIO CENTRO DOLLAR CD, S.A",
+                             "normalizedName":  "AGENTE DE CAMBIO CENTRO DOLLAR CD, S.A",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO CENTRO DOLLAR CD, S.A"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  35
+                         },
+                         {
+                             "id":  "sb-cfa595e610dcbbf12f0f",
+                             "name":  "AGENTE DE CAMBIO D´ ENCARNACIÓN SANTANA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO D ́ ENCARNACIÓN SANTANA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO D´ ENCARNACIÓN SANTANA, S. A.",
+                                                 "Agente de Cambio D´ Encarnación Santana, S. A."
+                                             ],
+                             "firstObserved":  "2024-03",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-c0f61fb02b091d46f16e",
+                             "name":  "AGENTE DE CAMBIO DARIO GUZMAN, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO DARIO GUZMAN, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO DARIO GUZMAN, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-b1488516b4d03fe8c996",
+                             "name":  "AGENTE DE CAMBIO DARÍO GUZMÁN, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO DARÍO GUZMÁN, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO DARÍO GUZMÁN, S. A.",
+                                                 "Agente de Cambio Darío Guzmán, S. A."
+                                             ],
+                             "firstObserved":  "2020-09",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-62c32963dd0dd1e6040c",
+                             "name":  "AGENTE DE CAMBIO DARIO GUZMAN, S.A.",
+                             "normalizedName":  "AGENTE DE CAMBIO DARIO GUZMAN, S.A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO DARIO GUZMAN, S.A."
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  10
+                         },
+                         {
+                             "id":  "sb-972047fd24603bac5057",
+                             "name":  "AGENTE DE CAMBIO DIEGO VASQUEZ \u0026 ASOC., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO DIEGO VASQUEZ \u0026 ASOC., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO DIEGO VASQUEZ \u0026 ASOC., S. A.",
+                                                 "Agente de Cambio Diego Vasquez \u0026 Asoc., S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-06d6ded82bc3cd2b927d",
+                             "name":  "AGENTE DE CAMBIO EURODIVISAS DOMINICANA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO EURODIVISAS DOMINICANA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO EURODIVISAS DOMINICANA, S. A.",
+                                                 "Agente de Cambio Eurodivisas Dominicana, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-b1d7b0f188026e6ff0a2",
+                             "name":  "AGENTE DE CAMBIO EXTRANJERO A. C. E., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO EXTRANJERO A. C. E., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO EXTRANJERO A. C. E., S. A.",
+                                                 "Agente de Cambio Extranjero A. C. E., S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-2d82c84c3b3d27e16228",
+                             "name":  "AGENTE DE CAMBIO GAMELIN, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO GAMELIN, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO GAMELIN, S. A.",
+                                                 "Agente de Cambio Gamelin, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-1d7a1b879d95bf10b52f",
+                             "name":  "AGENTE DE CAMBIO IMBERT \u0026 BALBUENA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO IMBERT \u0026 BALBUENA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO IMBERT \u0026 BALBUENA, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-58b86a4f7e833f2a0679",
+                             "name":  "AGENTE DE CAMBIO IMBERT Y BALBUENA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO IMBERT Y BALBUENA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO IMBERT Y BALBUENA, S. A.",
+                                                 "Agente de Cambio Imbert Y Balbuena, S. A."
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  84
+                         },
+                         {
+                             "id":  "sb-e3b2153ab758f0dd1e52",
+                             "name":  "AGENTE DE CAMBIO INVERSIONES GUERRERO \u0026 PEÑA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO INVERSIONES GUERRERO \u0026 PEÑA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO INVERSIONES GUERRERO \u0026 PEÑA, S. A.",
+                                                 "Agente de Cambio Inversiones Guerrero \u0026 Peña, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-5ffc12707ac1efd0b9b5",
+                             "name":  "AGENTE DE CAMBIO JOSE MANUEL, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JOSE MANUEL, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JOSE MANUEL, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-a872953b2f9a22f6c757",
+                             "name":  "AGENTE DE CAMBIO JOSÉ MANUEL, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JOSÉ MANUEL, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JOSÉ MANUEL, S. A.",
+                                                 "Agente de Cambio José Manuel, S. A."
+                                             ],
+                             "firstObserved":  "2020-09",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-2381a1193d5b05b6d242",
+                             "name":  "AGENTE DE CAMBIO JULIO DIAZ, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JULIO DIAZ, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JULIO DIAZ, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-07",
+                             "observationCount":  28
+                         },
+                         {
+                             "id":  "sb-251b4d1cf392ec3b2812",
+                             "name":  "AGENTE DE CAMBIO JULIO DÍAZ, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JULIO DÍAZ, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JULIO DÍAZ, S. A.",
+                                                 "Agente de Cambio Julio Díaz, S. A."
+                                             ],
+                             "firstObserved":  "2020-09",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-d0704bc0faf96a45684c",
+                             "name":  "AGENTE DE CAMBIO JULIO PENA \u0026 ASOC., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JULIO PENA \u0026 ASOC., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JULIO PENA \u0026 ASOC., S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-07",
+                             "observationCount":  28
+                         },
+                         {
+                             "id":  "sb-93d0ca25c6a0fa8dadf8",
+                             "name":  "AGENTE DE CAMBIO JULIO PEÑA \u0026 ASOC., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO JULIO PEÑA \u0026 ASOC., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO JULIO PEÑA \u0026 ASOC., S. A.",
+                                                 "Agente de Cambio Julio Peña \u0026 Asoc., S. A."
+                                             ],
+                             "firstObserved":  "2020-09",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-be80ac60ebfd5862aa28",
+                             "name":  "AGENTE DE CAMBIO LA MOREDI, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO LA MOREDI, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO LA MOREDI, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-2453391120f4fecdf17d",
+                             "name":  "AGENTE DE CAMBIO LA NACIONAL, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO LA NACIONAL, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO LA NACIONAL, S. A.",
+                                                 "Agente de Cambio La Nacional, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-dc757c260f7e06cb9d22",
+                             "name":  "AGENTE DE CAMBIO LEONEL, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO LEONEL, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO LEONEL, S. A.",
+                                                 "Agente de Cambio Leonel, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-92c23307556f2f33a9a9",
+                             "name":  "AGENTE DE CAMBIO LOS PRIMOS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO LOS PRIMOS, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO LOS PRIMOS, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-589a0ef192fedd312e48",
+                             "name":  "AGENTE DE CAMBIO MARCO S, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MARCO S, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MARCO S, S. A.",
+                                                 "Agente de Cambio Marco S, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-0a51ba635dbcc3954993",
+                             "name":  "AGENTE DE CAMBIO MARINELLY, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MARINELLY, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MARINELLY, S. A.",
+                                                 "Agente de Cambio Marinelly, S. A."
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2024-02",
+                             "observationCount":  52
+                         },
+                         {
+                             "id":  "sb-d9fbfa3e3d33289790e6",
+                             "name":  "AGENTE DE CAMBIO MARINELLY, S.A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MARINELLY, S.A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MARINELLY, S.A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-929f54060fc957237731",
+                             "name":  "AGENTE DE CAMBIO MARVE, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MARVE, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MARVE, S. A.",
+                                                 "Agente de Cambio Marve, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-943abad3157902214ff2",
+                             "name":  "AGENTE DE CAMBIO MELO, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MELO, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MELO, S. A.",
+                                                 "Agente de Cambio Melo, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-8a71043bbb803fca5f63",
+                             "name":  "AGENTE DE CAMBIO MONEYCORPS I.R, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO MONEYCORPS I.R, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO MONEYCORPS I.R, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-204115f029c278fa1827",
+                             "name":  "AGENTE DE CAMBIO NORCA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO NORCA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO NORCA, S. A.",
+                                                 "AGENTE DE CAMBIO NORCA, S.  A.",
+                                                 "Agente de Cambio Norca, S.  A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-0b120cad726778f0f06d",
+                             "name":  "AGENTE DE CAMBIO PANORA EXCHANGE SA",
+                             "normalizedName":  "AGENTE DE CAMBIO PANORA EXCHANGE SA",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO PANORA EXCHANGE SA"
+                                             ],
+                             "firstObserved":  "2023-03",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  44
+                         },
+                         {
+                             "id":  "sb-7b5972f4bb65cc9c46ff",
+                             "name":  "AGENTE DE CAMBIO PATRICIO HIERRO, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO PATRICIO HIERRO, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO PATRICIO HIERRO, S. A.",
+                                                 "Agente de Cambio Patricio Hierro, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-1c6c1903957b2fa128cc",
+                             "name":  "AGENTE DE CAMBIO PAULINO, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO PAULINO, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO PAULINO, S. A.",
+                                                 "Agente de Cambio Paulino, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-ebcdb18fc3dde0783d55",
+                             "name":  "AGENTE DE CAMBIO PLACIDO IV, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO PLACIDO IV, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO PLACIDO IV, S. A.",
+                                                 "Agente de Cambio Placido IV, S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  82
+                         },
+                         {
+                             "id":  "sb-461eb11ed544310b66aa",
+                             "name":  "AGENTE DE CAMBIO PLACIDO IV, S.A.",
+                             "normalizedName":  "AGENTE DE CAMBIO PLACIDO IV, S.A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO PLACIDO IV, S.A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-06",
+                             "observationCount":  18
+                         },
+                         {
+                             "id":  "sb-07d2c8cd22cc03587a71",
+                             "name":  "AGENTE DE CAMBIO QUEZADA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO QUEZADA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO QUEZADA, S. A.",
+                                                 "Agente de Cambio Quezada, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-42bbb733422033ec5409",
+                             "name":  "AGENTE DE CAMBIO R. M., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO R. M., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO R. M., S. A.",
+                                                 "Agente de Cambio R. M., S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-1dde949732567cb0e7fd",
+                             "name":  "AGENTE DE CAMBIO RAFAEL PLACIDO, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO RAFAEL PLACIDO, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO RAFAEL PLACIDO, S. A.",
+                                                 "Agente de Cambio Rafael Placido, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-7a19461aa86baabe62ad",
+                             "name":  "AGENTE DE CAMBIO RIJO \u0026 ASOCIADOS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO RIJO \u0026 ASOCIADOS, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO RIJO \u0026 ASOCIADOS, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-07a2cc7f05d94d3636a6",
+                             "name":  "AGENTE DE CAMBIO RODRIGUEZ REYES, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO RODRIGUEZ REYES, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO RODRIGUEZ REYES, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-eec3a17f5d29e5aca21d",
+                             "name":  "AGENTE DE CAMBIO RODRÍGUEZ REYES, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO RODRÍGUEZ REYES, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO RODRÍGUEZ REYES, S. A.",
+                                                 "Agente de Cambio Rodríguez Reyes, S. A."
+                                             ],
+                             "firstObserved":  "2020-09",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-0cc32a38455b8cb87be5",
+                             "name":  "AGENTE DE CAMBIO ROSARIO, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO ROSARIO, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO ROSARIO, S. A.",
+                                                 "Agente de Cambio Rosario, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-b2aac522c317b8346fff",
+                             "name":  "AGENTE DE CAMBIO S.C.T., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO S.C.T., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO S.C.T., S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-10",
+                             "observationCount":  22
+                         },
+                         {
+                             "id":  "sb-4366ce92d9bd18befecc",
+                             "name":  "AGENTE DE CAMBIO SANTA LUCIA, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO SANTA LUCIA, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO SANTA LUCIA, S. A.",
+                                                 "Agente de Cambio Santa Lucia, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-81f3203dfa87d2124a33",
+                             "name":  "AGENTE DE CAMBIO SP (SP CAMBIO), C. POR A.",
+                             "normalizedName":  "AGENTE DE CAMBIO SP (SP CAMBIO), C. POR A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO SP (SP CAMBIO), C. POR A.",
+                                                 "Agente de Cambio SP (Sp Cambio), C. por A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-4509a4f0095bab80dc8d",
+                             "name":  "AGENTE DE CAMBIO TAVERAS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO TAVERAS, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO TAVERAS, S. A.",
+                                                 "Agente de Cambio Taveras, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-4b467078d0e0df1d278f",
+                             "name":  "AGENTE DE CAMBIO TRACE, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO TRACE, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO TRACE, S. A.",
+                                                 "Agente de Cambio Trace, S. A."
+                                             ],
+                             "firstObserved":  "2021-08",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  63
+                         },
+                         {
+                             "id":  "sb-2e1caeb45a3f1b9c6080",
+                             "name":  "AGENTE DE CAMBIO TRANSACCIONES DAMOS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO TRANSACCIONES DAMOS, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO TRANSACCIONES DAMOS, S. A.",
+                                                 "Agente de Cambio Transacciones Damos, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-85348f2b513b144a3387",
+                             "name":  "AGENTE DE CAMBIO WALLY, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO WALLY, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO WALLY, S. A.",
+                                                 "Agente de Cambio Wally, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-050baccd39a9ae8c14af",
+                             "name":  "AGENTE DE CAMBIO, RIJO \u0026 ASOCIADOS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO, RIJO \u0026 ASOCIADOS, S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO, RIJO \u0026 ASOCIADOS, S. A.",
+                                                 "Agente de Cambio, Rijo \u0026 Asociados, S. A."
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  84
+                         },
+                         {
+                             "id":  "sb-31e8220e71c38dd0e66a",
+                             "name":  "AGENTE DE CAMBIO, S.C.T., S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO, S.C.T., S. A.",
+                             "category":  "AGENTES DE CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO, S.C.T., S. A.",
+                                                 "Agente de Cambio, S.C.T., S. A."
+                                             ],
+                             "firstObserved":  "2019-11",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  84
+                         },
+                         {
+                             "id":  "sb-e0997da829bdae999cc6",
+                             "name":  "AGENTE DE CAMBIO Y REMESAS CARIBE EXPRESS, S. A.",
+                             "normalizedName":  "AGENTE DE CAMBIO Y REMESAS CARIBE EXPRESS, S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE CAMBIO Y REMESAS CARIBE EXPRESS, S. A.",
+                                                 "Agente de Cambio y Remesas Caribe Express, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-879677e2e82e60210f33",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO CAPLA, S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO CAPLA, S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO CAPLA, S. A.",
+                                                 "Agente de Remesas y Cambio Capla, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2023-01",
+                             "observationCount":  61
+                         },
+                         {
+                             "id":  "sb-728eb4139c71a42b8b1e",
+                             "name":  "Agente de Remesas y Cambio Capla, S. A., DBA AG Capla",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO CAPLA, S. A., DBA AG CAPLA",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "Agente de Remesas y Cambio Capla, S. A., DBA AG Capla",
+                                                 "AGENTE DE REMESAS Y CAMBIO CAPLA, S. A., DBA AG CAPLA"
+                                             ],
+                             "firstObserved":  "2023-02",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  45
+                         },
+                         {
+                             "id":  "sb-85ce7b034bb54db85750",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO CIBAO EXPRESS, S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO CIBAO EXPRESS, S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO CIBAO EXPRESS, S. A.",
+                                                 "Agente de Remesas y Cambio Cibao Express, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-7a110068ed6c6d94f2fd",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO GIROSOL CORPORATION, S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO GIROSOL CORPORATION, S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO GIROSOL CORPORATION, S. A.",
+                                                 "Agente de Remesas y Cambio Girosol Corporation, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-3b4cd824652a50df6040",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO MONEYCORPS I.R., S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO MONEYCORPS I.R., S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO MONEYCORPS I.R., S. A.",
+                                                 "Agente de Remesas y Cambio Moneycorps I.R., S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  82
+                         },
+                         {
+                             "id":  "sb-a57408ab4ee8dd322eb5",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO VIMENCA S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO VIMENCA S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO VIMENCA S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-12",
+                             "observationCount":  24
+                         },
+                         {
+                             "id":  "sb-7f2f34f52c3761ed11f1",
+                             "name":  "AGENTE DE REMESAS Y CAMBIO VIMENCA, S. A.",
+                             "normalizedName":  "AGENTE DE REMESAS Y CAMBIO VIMENCA, S. A.",
+                             "category":  "AGENTES DE REMESAS Y CAMBIO",
+                             "sourceNames":  [
+                                                 "AGENTE DE REMESAS Y CAMBIO VIMENCA, S. A.",
+                                                 "Agente de Remesas y Cambio Vimenca, S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  82
+                         },
+                         {
+                             "id":  "sb-10e40e7bf7810080ba22",
+                             "name":  "ASOCIACION BONAO DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION BONAO DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION BONAO DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-196d9ff0142062e91da1",
+                             "name":  "Asociación Bonao de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN BONAO DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Bonao de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN BONAO DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-f12884ca9d50fd79ee04",
+                             "name":  "ASOCIACION CIBAO  DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION CIBAO DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION CIBAO  DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-ff47e9b852651a0c9e2f",
+                             "name":  "Asociación Cibao  de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN CIBAO DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Cibao  de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN CIBAO  DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-ce01a1184e612294eae0",
+                             "name":  "ASOCIACION DUARTE DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION DUARTE DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION DUARTE DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-6dc4ee51ca298f6c8908",
+                             "name":  "Asociación Duarte de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN DUARTE DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Duarte de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN DUARTE DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-fb31adb2716805c051a4",
+                             "name":  "ASOCIACION LA NACIONAL DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION LA NACIONAL DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION LA NACIONAL DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-e4164ffd485f8c42f050",
+                             "name":  "Asociación La Nacional de Ahorros Y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN LA NACIONAL DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación La Nacional de Ahorros Y Préstamos",
+                                                 "ASOCIACIÓN LA NACIONAL DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-a0024421bf5f13f71778",
+                             "name":  "ASOCIACION LA VEGA REAL DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION LA VEGA REAL DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION LA VEGA REAL DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-28e7922cf0537347558c",
+                             "name":  "Asociación La Vega Real de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN LA VEGA REAL DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación La Vega Real de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN LA VEGA REAL DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-2606a6dbd68f9fcb672e",
+                             "name":  "ASOCIACION MAGUANA DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION MAGUANA DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION MAGUANA DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-6007b5f17d7fd31983ee",
+                             "name":  "Asociación Maguana de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN MAGUANA DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Maguana de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN MAGUANA DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-b0f8e2f553cfd75eb0e3",
+                             "name":  "ASOCIACION MOCANA DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION MOCANA DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION MOCANA DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-6d24a4dbe3cfa4a58329",
+                             "name":  "Asociación Mocana de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN MOCANA DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Mocana de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN MOCANA DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-2bbc39961a7b514db162",
+                             "name":  "ASOCIACION PERAVIA DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION PERAVIA DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION PERAVIA DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-38efbc8f2325be110113",
+                             "name":  "Asociación Peravia de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN PERAVIA DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Peravia de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN PERAVIA DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-43a6900a34229eed5802",
+                             "name":  "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-065458b76de7793ffb82",
+                             "name":  "Asociación Popular de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN POPULAR DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Popular de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN POPULAR DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-309b3827290705658dab",
+                             "name":  "ASOCIACION ROMANA DE AHORROS Y PRESTAMOS",
+                             "normalizedName":  "ASOCIACION ROMANA DE AHORROS Y PRESTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "ASOCIACION ROMANA DE AHORROS Y PRESTAMOS"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-0a1e81621607810d3ef4",
+                             "name":  "Asociación Romana de Ahorros y Préstamos",
+                             "normalizedName":  "ASOCIACIÓN ROMANA DE AHORROS Y PRÉSTAMOS",
+                             "category":  "ASOCIACIONES DE AHORROS Y PRÉSTAMOS",
+                             "sourceNames":  [
+                                                 "Asociación Romana de Ahorros y Préstamos",
+                                                 "ASOCIACIÓN ROMANA DE AHORROS Y PRÉSTAMOS"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-a40b8923a04313feeb44",
+                             "name":  "BANCO ATLANTICO DE AHORRO Y CREDITO,  S. A.",
+                             "normalizedName":  "BANCO ATLANTICO DE AHORRO Y CREDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO ATLANTICO DE AHORRO Y CREDITO,  S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-7d6e651ea34c15510f6f",
+                             "name":  "Banco Atlántico de Ahorro Y Crédito,  S. A.",
+                             "normalizedName":  "BANCO ATLÁNTICO DE AHORRO Y CRÉDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco Atlántico de Ahorro Y Crédito,  S. A.",
+                                                 "BANCO ATLÁNTICO DE AHORRO Y CRÉDITO,  S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-4f23a71a69d58fc05d8e",
+                             "name":  "BANCO BACC DE AHORRO Y CREDITO DEL CARIBE, S. A.",
+                             "normalizedName":  "BANCO BACC DE AHORRO Y CREDITO DEL CARIBE, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO BACC DE AHORRO Y CREDITO DEL CARIBE, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-8ec4a1cbf2e5efe7520f",
+                             "name":  "Banco Bacc de Ahorro y Crédito del Caribe, S. A.",
+                             "normalizedName":  "BANCO BACC DE AHORRO Y CRÉDITO DEL CARIBE, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco Bacc de Ahorro y Crédito del Caribe, S. A.",
+                                                 "BANCO BACC DE AHORRO Y CRÉDITO DEL CARIBE, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-f10dcde8ca73db8a1b78",
+                             "name":  "BANCO DE AHORRO Y CREDITO ADOPEM, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO ADOPEM, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO ADOPEM, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-d5a048191c1e0cc2008e",
+                             "name":  "Banco de Ahorro y Crédito Adopem, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO ADOPEM, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Adopem, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO ADOPEM, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-e0173110510c63baa1e9",
+                             "name":  "BANCO DE AHORRO Y CREDITO BANCOTUI, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO BANCOTUI, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO BANCOTUI, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-b37dfbceeb6ece54ec22",
+                             "name":  "Banco de Ahorro y Crédito Bancotui, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO BANCOTUI, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Bancotui, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO BANCOTUI, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-c8c0cb778e086536fbf6",
+                             "name":  "BANCO DE AHORRO Y CREDITO COFACI, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO COFACI, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO COFACI, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-f268625c9328d9991c2c",
+                             "name":  "Banco de Ahorro Y Crédito Cofaci, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO COFACI, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro Y Crédito Cofaci, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO COFACI, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-44dcec926cce0c29f27d",
+                             "name":  "Banco de Ahorro y Crédito Confisa, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO CONFISA, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Confisa, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO CONFISA, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-99e9d9cf5694cfdeb704",
+                             "name":  "BANCO DE AHORRO Y CREDITO CONFISA, S.A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO CONFISA, S.A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO CONFISA, S.A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-83c3ebfd849da755becc",
+                             "name":  "BANCO DE AHORRO Y CREDITO EMPIRE, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO EMPIRE, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO EMPIRE, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-cf3d2e571bcacd0d33f5",
+                             "name":  "Banco de Ahorro y Crédito Empire, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO EMPIRE, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Empire, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2024-05",
+                             "observationCount":  17
+                         },
+                         {
+                             "id":  "sb-f4b44da8ed5d25919567",
+                             "name":  "BANCO DE AHORRO Y CREDITO FIHOGAR, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO FIHOGAR, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO FIHOGAR, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-88c01fdee4501ac83d57",
+                             "name":  "Banco de Ahorro y Crédito Fihogar, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO FIHOGAR, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Fihogar, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO FIHOGAR, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-c2375d7700d94c675ef6",
+                             "name":  "BANCO DE AHORRO Y CREDITO FONDESA, S. A. (BANFONDESA)",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO FONDESA, S. A. (BANFONDESA)",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO FONDESA, S. A. (BANFONDESA)"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-16351fef315224962eb1",
+                             "name":  "Banco de Ahorro y Crédito Fondesa, S. A. (Banfondesa)",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO FONDESA, S. A. (BANFONDESA)",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Fondesa, S. A. (Banfondesa)",
+                                                 "BANCO DE AHORRO Y CRÉDITO FONDESA, S. A. (BANFONDESA)"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-11a751c9180213c3ad8c",
+                             "name":  "BANCO DE AHORRO Y CREDITO GRUFICORP, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO GRUFICORP, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO GRUFICORP, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-93274f24552479090155",
+                             "name":  "Banco de Ahorro y Crédito Gruficorp, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO GRUFICORP, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Gruficorp, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO GRUFICORP, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-a22ff071ef811529cf6b",
+                             "name":  "BANCO DE AHORRO Y CREDITO JMMB BANK, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO JMMB BANK, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO JMMB BANK, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-ced35db2e222ced13713",
+                             "name":  "Banco de Ahorro y Crédito Jmmb Bank, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO JMMB BANK, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Jmmb Bank, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2024-02",
+                             "observationCount":  14
+                         },
+                         {
+                             "id":  "sb-14bf063bcc3e9dad9c4e",
+                             "name":  "BANCO DE AHORRO Y CREDITO UNION, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CREDITO UNION, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO DE AHORRO Y CREDITO UNION, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-f1bac3dcb2cf5ce0e6f2",
+                             "name":  "Banco de Ahorro y Crédito Unión, S. A.",
+                             "normalizedName":  "BANCO DE AHORRO Y CRÉDITO UNIÓN, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Banco de Ahorro y Crédito Unión, S. A.",
+                                                 "BANCO DE AHORRO Y CRÉDITO UNIÓN, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-c8c63fcdfb2107847927",
+                             "name":  "BANCO ÓPTIMA DE AHORRO Y CRÉDITO, S. A.",
+                             "normalizedName":  "BANCO ÓPTIMA DE AHORRO Y CRÉDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BANCO ÓPTIMA DE AHORRO Y CRÉDITO, S. A."
+                                             ],
+                             "firstObserved":  "2022-12",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  47
+                         },
+                         {
+                             "id":  "sb-316f35c901ec5360e025",
+                             "name":  "BONANZA BANCO DE AHORRO Y CREDITO, S. A.",
+                             "normalizedName":  "BONANZA BANCO DE AHORRO Y CREDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "BONANZA BANCO DE AHORRO Y CREDITO, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-0fb3d46d9571b8cc652e",
+                             "name":  "Bonanza Banco de Ahorro y Crédito, S. A.",
+                             "normalizedName":  "BONANZA BANCO DE AHORRO Y CRÉDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Bonanza Banco de Ahorro y Crédito, S. A.",
+                                                 "BONANZA BANCO DE AHORRO Y CRÉDITO, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-5d77272e8da13be6e526",
+                             "name":  "LEASING CONFISA, BANCO DE AHORRO Y CREDITO, S. A.",
+                             "normalizedName":  "LEASING CONFISA, BANCO DE AHORRO Y CREDITO, S. A.",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "LEASING CONFISA, BANCO DE AHORRO Y CREDITO, S. A."
+                                             ],
+                             "firstObserved":  "2024-07",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  23
+                         },
+                         {
+                             "id":  "sb-31c9ec8771c8782fbba7",
+                             "name":  "Motor Crédito, S. A. Banco de Ahorro y Crédito",
+                             "normalizedName":  "MOTOR CRÉDITO, S. A. BANCO DE AHORRO Y CRÉDITO",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "Motor Crédito, S. A. Banco de Ahorro y Crédito",
+                                                 "MOTOR CRÉDITO, S. A. BANCO DE AHORRO Y CRÉDITO"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-8916ca0eba735e43254b",
+                             "name":  "MOTOR CREDITO, S. A., BANCO DE AHORRO Y CREDITO",
+                             "normalizedName":  "MOTOR CREDITO, S. A., BANCO DE AHORRO Y CREDITO",
+                             "category":  "BANCOS DE AHORRO Y CRÉDITO",
+                             "sourceNames":  [
+                                                 "MOTOR CREDITO, S. A., BANCO DE AHORRO Y CREDITO"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-e5b315b58052768cfc5c",
+                             "name":  "BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA-BANCO DE SERVIC",
+                             "normalizedName":  "BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA-BANCO DE SERVIC",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA-BANCO DE SERVIC"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-c334fd87620ad8875314",
+                             "name":  "BANCO DOMINICANO DEL PROGRESO S. A.-BANCO MULTIPLE",
+                             "normalizedName":  "BANCO DOMINICANO DEL PROGRESO S. A.-BANCO MULTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO DOMINICANO DEL PROGRESO S. A.-BANCO MULTIPLE"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-08",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-067a85c1ae26db427586",
+                             "name":  "BANCO MULTIPLE ACTIVO DOMINICANA, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE ACTIVO DOMINICANA, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE ACTIVO DOMINICANA, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-9c1e0c1c78987438de2f",
+                             "name":  "Banco Múltiple Activo Dominicana, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE ACTIVO DOMINICANA, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Activo Dominicana, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2024-02",
+                             "observationCount":  14
+                         },
+                         {
+                             "id":  "sb-e9e4e6c438b8df4b2f3e",
+                             "name":  "BANCO MULTIPLE ADEMI, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE ADEMI, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE ADEMI, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-a74fdc4b1d13acf47d4e",
+                             "name":  "Banco Múltiple Ademi, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE ADEMI, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Ademi, S. A.",
+                                                 "BANCO MÚLTIPLE ADEMI, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-c0074f48840c32853bb4",
+                             "name":  "BANCO MULTIPLE BDI, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE BDI, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE BDI, S. A.",
+                                                 "Banco Multiple BDI, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-53bc8fa7d4b46ed5cf75",
+                             "name":  "BANCO MULTIPLE BELLBANK, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE BELLBANK, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE BELLBANK, S. A.",
+                                                 "Banco Multiple Bellbank, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2024-02",
+                             "observationCount":  74
+                         },
+                         {
+                             "id":  "sb-cd1d6d107f9ef08d6829",
+                             "name":  "BANCO MULTIPLE BHD LEON  S. A.",
+                             "normalizedName":  "BANCO MULTIPLE BHD LEON S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE BHD LEON  S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-8e90345c391a9579a5ca",
+                             "name":  "Banco Múltiple BHD, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE BHD, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple BHD, S. A.",
+                                                 "BANCO MÚLTIPLE BHD, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-a868fb8bb40537dd1d27",
+                             "name":  "BANCO MULTIPLE CARIBE INTERNACIONAL S. A.",
+                             "normalizedName":  "BANCO MULTIPLE CARIBE INTERNACIONAL S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE CARIBE INTERNACIONAL S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-fafe7ec572f95c1faded",
+                             "name":  "Banco Multiple Caribe Internacional, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE CARIBE INTERNACIONAL, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Multiple Caribe Internacional, S. A.",
+                                                 "BANCO MULTIPLE CARIBE INTERNACIONAL, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-2ef6d14bac229d453df1",
+                             "name":  "BANCO MULTIPLE DE LAS AMERICAS, S. A.(BANCAMERICA)",
+                             "normalizedName":  "BANCO MULTIPLE DE LAS AMERICAS, S. A.(BANCAMERICA)",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE DE LAS AMERICAS, S. A.(BANCAMERICA)"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-01",
+                             "observationCount":  49
+                         },
+                         {
+                             "id":  "sb-1f2b6191b2bef5c17b0e",
+                             "name":  "BANCO MÚLTIPLE JMMB BANK, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE JMMB BANK, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MÚLTIPLE JMMB BANK, S. A."
+                                             ],
+                             "firstObserved":  "2024-03",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  32
+                         },
+                         {
+                             "id":  "sb-4fe722299c739aac4051",
+                             "name":  "BANCO MULTIPLE LAFISE, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE LAFISE, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE LAFISE, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-5e27339374f9064c9da0",
+                             "name":  "Banco Múltiple Lafise, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE LAFISE, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Lafise, S. A.",
+                                                 "BANCO MÚLTIPLE LAFISE, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-28a3d772e4dd33c4fe98",
+                             "name":  "BANCO MULTIPLE LOPEZ DE HARO, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE LOPEZ DE HARO, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE LOPEZ DE HARO, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-b222d455301dfe79ad38",
+                             "name":  "Banco Múltiple López de Haro, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE LÓPEZ DE HARO, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple López de Haro, S. A.",
+                                                 "BANCO MÚLTIPLE LÓPEZ DE HARO, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-feed93d8c98b69c0ad4c",
+                             "name":  "BANCO MULTIPLE PROMERICA DE LA REPUBLICA DOMINICANA S. A.",
+                             "normalizedName":  "BANCO MULTIPLE PROMERICA DE LA REPUBLICA DOMINICANA S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE PROMERICA DE LA REPUBLICA DOMINICANA S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-c1a33c3097f415f38189",
+                             "name":  "Banco Múltiple Promerica de la República Dominicana, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE PROMERICA DE LA REPÚBLICA DOMINICANA, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Promerica de la República Dominicana, S. A.",
+                                                 "BANCO MÚLTIPLE PROMERICA DE LA REPÚBLICA DOMINICANA, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-839bfc109dd6afee09e6",
+                             "name":  "BANCO MULTIPLE SANTA CRUZ, S. A.",
+                             "normalizedName":  "BANCO MULTIPLE SANTA CRUZ, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE SANTA CRUZ, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-b2cd4410fc8aab05d417",
+                             "name":  "Banco Múltiple Santa Cruz, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE SANTA CRUZ, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Santa Cruz, S. A.",
+                                                 "BANCO MÚLTIPLE SANTA CRUZ, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-4615af3ee248c1fdb8e6",
+                             "name":  "BANCO MULTIPLE VIMENCA  S. A.",
+                             "normalizedName":  "BANCO MULTIPLE VIMENCA S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO MULTIPLE VIMENCA  S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-e0f8a411041a877b318f",
+                             "name":  "Banco Múltiple Vimenca, S. A.",
+                             "normalizedName":  "BANCO MÚLTIPLE VIMENCA, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Múltiple Vimenca, S. A.",
+                                                 "BANCO MÚLTIPLE VIMENCA, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-10be8486a5897989e9f4",
+                             "name":  "Banco Popular Dominicano, S. A. - Banco Múltiple",
+                             "normalizedName":  "BANCO POPULAR DOMINICANO, S. A. - BANCO MÚLTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banco Popular Dominicano, S. A. - Banco Múltiple",
+                                                 "BANCO POPULAR DOMINICANO, S. A. - BANCO MÚLTIPLE"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-a550fb28f61b6901d0c5",
+                             "name":  "BANCO POPULAR DOMINICANO, S. A.- BANCO MULTIPLE",
+                             "normalizedName":  "BANCO POPULAR DOMINICANO, S. A.- BANCO MULTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANCO POPULAR DOMINICANO, S. A.- BANCO MULTIPLE"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-0f61cbf1b9f2ec5cb8fc",
+                             "name":  "BANESCO BANCO MULTIPLE  S. A.",
+                             "normalizedName":  "BANESCO BANCO MULTIPLE S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "BANESCO BANCO MULTIPLE  S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-a11f1b920c9dd6cae467",
+                             "name":  "Banesco Banco Múltiple, S. A.",
+                             "normalizedName":  "BANESCO BANCO MÚLTIPLE, S. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Banesco Banco Múltiple, S. A.",
+                                                 "BANESCO BANCO MÚLTIPLE, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-40b36938156e61f3c8fc",
+                             "name":  "Citibank, N. A.",
+                             "normalizedName":  "CITIBANK, N. A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Citibank, N. A.",
+                                                 "CITIBANK, N. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-8eb50ecc0caa3c0581e5",
+                             "name":  "CITIBANK, N.A.",
+                             "normalizedName":  "CITIBANK, N.A.",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "CITIBANK, N.A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-3417148773fd2e9b0328",
+                             "name":  "QIK BANCO DIGITAL DOMINICANO, S. A., BANCO MULTIPLE",
+                             "normalizedName":  "QIK BANCO DIGITAL DOMINICANO, S. A., BANCO MULTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "QIK BANCO DIGITAL DOMINICANO, S. A., BANCO MULTIPLE"
+                                             ],
+                             "firstObserved":  "2022-11",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  48
+                         },
+                         {
+                             "id":  "sb-c3902840ab8666ad1d94",
+                             "name":  "Scotiabank República Dominicana, S. A. - Banco Múltiple",
+                             "normalizedName":  "SCOTIABANK REPÚBLICA DOMINICANA, S. A. - BANCO MÚLTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "Scotiabank República Dominicana, S. A. - Banco Múltiple",
+                                                 "SCOTIABANK REPÚBLICA DOMINICANA, S. A. - BANCO MÚLTIPLE"
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-0bf341af0d2bfdb371a9",
+                             "name":  "SCOTIABANK REPUBLICA DOMINICANA, S.A. - BANCO MULTIPLE",
+                             "normalizedName":  "SCOTIABANK REPUBLICA DOMINICANA, S.A. - BANCO MULTIPLE",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "SCOTIABANK REPUBLICA DOMINICANA, S.A. - BANCO MULTIPLE"
+                                             ],
+                             "firstObserved":  "2020-06",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  31
+                         },
+                         {
+                             "id":  "sb-bea9247cdcc40ea1171d",
+                             "name":  "THE BANK OF NOVA SCOTIA",
+                             "normalizedName":  "THE BANK OF NOVA SCOTIA",
+                             "category":  "BANCOS MÚLTIPLES",
+                             "sourceNames":  [
+                                                 "THE BANK OF NOVA SCOTIA"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-05",
+                             "observationCount":  29
+                         },
+                         {
+                             "id":  "sb-8979be87393d6f7affa0",
+                             "name":  "CORPORACION DE CREDITO LEASING CONFISA, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO LEASING CONFISA, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO LEASING CONFISA, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-12",
+                             "observationCount":  24
+                         },
+                         {
+                             "id":  "sb-a45a1a26f16bdc9d1a83",
+                             "name":  "Corporación de Crédito Leasing Confisa, S. A.",
+                             "normalizedName":  "CORPORACIÓN DE CRÉDITO LEASING CONFISA, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "Corporación de Crédito Leasing Confisa, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2024-12",
+                             "observationCount":  23
+                         },
+                         {
+                             "id":  "sb-af3cbdf4864a328a369a",
+                             "name":  "CORPORACION DE CREDITO LEASING CONFISA, S.A.",
+                             "normalizedName":  "CORPORACION DE CREDITO LEASING CONFISA, S.A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO LEASING CONFISA, S.A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  36
+                         },
+                         {
+                             "id":  "sb-9af166a012a567e93ec1",
+                             "name":  "CORPORACION DE CREDITO MONUMENTAL, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO MONUMENTAL, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO MONUMENTAL, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-04efb0a6f2ef29b38b20",
+                             "name":  "Corporación de Crédito Monumental, S. A.",
+                             "normalizedName":  "CORPORACIÓN DE CRÉDITO MONUMENTAL, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "Corporación de Crédito Monumental, S. A.",
+                                                 "CORPORACIÓN DE CRÉDITO MONUMENTAL, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-27e23e7fa38b1bc565f1",
+                             "name":  "CORPORACION DE CREDITO NORDESTANA DE PRESTAMOS, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO NORDESTANA DE PRESTAMOS, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO NORDESTANA DE PRESTAMOS, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-ecda46be5bf93d5d8e23",
+                             "name":  "Corporación de Crédito Nordestana de Préstamos, S. A.",
+                             "normalizedName":  "CORPORACIÓN DE CRÉDITO NORDESTANA DE PRÉSTAMOS, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "Corporación de Crédito Nordestana de Préstamos, S. A.",
+                                                 "CORPORACIÓN DE CRÉDITO NORDESTANA DE PRÉSTAMOS, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-e0ee0615a1618ba7adbe",
+                             "name":  "CORPORACION DE CREDITO OFICORP, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO OFICORP, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO OFICORP, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-3a65da157906d903a589",
+                             "name":  "Corporación de Crédito Oficorp, S. A.",
+                             "normalizedName":  "CORPORACIÓN DE CRÉDITO OFICORP, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "Corporación de Crédito Oficorp, S. A.",
+                                                 "CORPORACIÓN DE CRÉDITO OFICORP, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  46
+                         },
+                         {
+                             "id":  "sb-871733979abf077e0b23",
+                             "name":  "CORPORACION DE CREDITO PREINDESA, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO PREINDESA, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO PREINDESA, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-12",
+                             "observationCount":  24
+                         },
+                         {
+                             "id":  "sb-17ab8ab2079fb86df26c",
+                             "name":  "CORPORACION DE CREDITO REIDCO, S. A.",
+                             "normalizedName":  "CORPORACION DE CREDITO REIDCO, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "CORPORACION DE CREDITO REIDCO, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-07",
+                             "observationCount":  55
+                         },
+                         {
+                             "id":  "sb-779fb294e61e2ac41b2b",
+                             "name":  "OPTIMA CORPORACION DE CREDITO, S. A.",
+                             "normalizedName":  "OPTIMA CORPORACION DE CREDITO, S. A.",
+                             "category":  "CORPORACIONES DE CRÉDITO",
+                             "sourceNames":  [
+                                                 "OPTIMA CORPORACION DE CREDITO, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  60
+                         },
+                         {
+                             "id":  "sb-847c6eace363d6751ec2",
+                             "name":  "DAF PARTNERS, S. A.",
+                             "normalizedName":  "DAF PARTNERS, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "DAF PARTNERS, S. A.",
+                                                 "Daf Partners, S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  76
+                         },
+                         {
+                             "id":  "sb-a19d0dba66e7ece50002",
+                             "name":  "DINAMIS TRUSTEE DT, S. A.",
+                             "normalizedName":  "DINAMIS TRUSTEE DT, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "DINAMIS TRUSTEE DT, S. A.",
+                                                 "Dinamis Trustee DT, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-625f540a63be7a3f5991",
+                             "name":  "FIDUCIARIA ADVANCED TRUSTEE SERVICES, FIDADVANCED, S. A.",
+                             "normalizedName":  "FIDUCIARIA ADVANCED TRUSTEE SERVICES, FIDADVANCED, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA ADVANCED TRUSTEE SERVICES, FIDADVANCED, S. A.",
+                                                 "Fiduciaria Advanced Trustee Services, Fidadvanced, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-9b984aec4d2d5c47762a",
+                             "name":  "FIDUCIARIA BHD, S. A.",
+                             "normalizedName":  "FIDUCIARIA BHD, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA BHD, S. A.",
+                                                 "Fiduciaria BHD, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-f16d81c28922d265926c",
+                             "name":  "FIDUCIARIA DOMINICANA FIDOM, S. A.",
+                             "normalizedName":  "FIDUCIARIA DOMINICANA FIDOM, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA DOMINICANA FIDOM, S. A.",
+                                                 "Fiduciaria Dominicana Fidom, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-996f0e3645b4bdcef09c",
+                             "name":  "FIDUCIARIA FÉNIX, S. A.",
+                             "normalizedName":  "FIDUCIARIA FÉNIX, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA FÉNIX, S. A.",
+                                                 "Fiduciaria Fénix, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-6b87fad93b2783aba835",
+                             "name":  "FIDUCIARIA FENIX, S.A.",
+                             "normalizedName":  "FIDUCIARIA FENIX, S.A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA FENIX, S.A."
+                                             ],
+                             "firstObserved":  "2021-06",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  19
+                         },
+                         {
+                             "id":  "sb-77598ac13f00e87c522c",
+                             "name":  "Fiduciaria Forwol, S. A.",
+                             "normalizedName":  "FIDUCIARIA FORWOL, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "Fiduciaria Forwol, S. A.",
+                                                 "FIDUCIARIA FORWOL, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  40
+                         },
+                         {
+                             "id":  "sb-8246f0d6b5e3f037bb9f",
+                             "name":  "FIDUCIARIA LA NACIONAL, S.A.",
+                             "normalizedName":  "FIDUCIARIA LA NACIONAL, S.A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA LA NACIONAL, S.A.",
+                                                 "Fiduciaria La Nacional, S.A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-4cb6b7cdc9d974305bfa",
+                             "name":  "FIDUCIARIA OMG, S. A.",
+                             "normalizedName":  "FIDUCIARIA OMG, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA OMG, S. A.",
+                                                 "Fiduciaria Omg, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-611961975e42ea086498",
+                             "name":  "FIDUCIARIA POPULAR, S. A.",
+                             "normalizedName":  "FIDUCIARIA POPULAR, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA POPULAR, S. A.",
+                                                 "Fiduciaria Popular, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-8082fd843eb22b007d71",
+                             "name":  "FIDUCIARIA RESERVAS, S. A.",
+                             "normalizedName":  "FIDUCIARIA RESERVAS, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA RESERVAS, S. A.",
+                                                 "Fiduciaria Reservas, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-03f7e337242afa74a049",
+                             "name":  "FIDUCIARIA SCOTIABANK, S. A.",
+                             "normalizedName":  "FIDUCIARIA SCOTIABANK, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA SCOTIABANK, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2020-06",
+                             "observationCount":  30
+                         },
+                         {
+                             "id":  "sb-98aa63d93b2573add6a3",
+                             "name":  "FIDUCIARIA UNION CAPITAL FIDUCAPITAL SA",
+                             "normalizedName":  "FIDUCIARIA UNION CAPITAL FIDUCAPITAL SA",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA UNION CAPITAL FIDUCAPITAL SA"
+                                             ],
+                             "firstObserved":  "2023-04",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  37
+                         },
+                         {
+                             "id":  "sb-8a3634242d281d15f42e",
+                             "name":  "FIDUCIARIA UNION CORPORATIVA FIDUNION, S. A.",
+                             "normalizedName":  "FIDUCIARIA UNION CORPORATIVA FIDUNION, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA UNION CORPORATIVA FIDUNION, S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2022-12",
+                             "observationCount":  36
+                         },
+                         {
+                             "id":  "sb-b4b7e734c6b86481c40e",
+                             "name":  "Fiduciaria Unión Corporativa Fidunion, S. A.",
+                             "normalizedName":  "FIDUCIARIA UNIÓN CORPORATIVA FIDUNION, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "Fiduciaria Unión Corporativa Fidunion, S. A.",
+                                                 "FIDUCIARIA UNIÓN CORPORATIVA FIDUNION, S. A."
+                                             ],
+                             "firstObserved":  "2023-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  40
+                         },
+                         {
+                             "id":  "sb-9b8cfde1c0ef6935dd54",
+                             "name":  "FIDUCIARIA UNIVERSAL, S. A.",
+                             "normalizedName":  "FIDUCIARIA UNIVERSAL, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCIARIA UNIVERSAL, S. A.",
+                                                 "Fiduciaria Universal, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-d17b9c846b08ea74cbae",
+                             "name":  "FIDUCORP, SERVICIOS FIDUCIARIOS CORPORATIVOS, S. A.",
+                             "normalizedName":  "FIDUCORP, SERVICIOS FIDUCIARIOS CORPORATIVOS, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "FIDUCORP, SERVICIOS FIDUCIARIOS CORPORATIVOS, S. A.",
+                                                 "Fiducorp, Servicios Fiduciarios Corporativos, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  64
+                         },
+                         {
+                             "id":  "sb-be69015dfc21bc261cdb",
+                             "name":  "G MAT FIDUCIARIA, S. A.",
+                             "normalizedName":  "G MAT FIDUCIARIA, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "G MAT FIDUCIARIA, S. A.",
+                                                 "G Mat Fiduciaria, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-d38d86e641e982fae40c",
+                             "name":  "HTS FIDUCIARIA, S. A.",
+                             "normalizedName":  "HTS FIDUCIARIA, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "HTS FIDUCIARIA, S. A.",
+                                                 "Hts Fiduciaria, S. A."
+                                             ],
+                             "firstObserved":  "2020-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  76
+                         },
+                         {
+                             "id":  "sb-cb037e0b548925bca10f",
+                             "name":  "IN COMMENDAM, S. A.",
+                             "normalizedName":  "IN COMMENDAM, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "IN COMMENDAM, S. A.",
+                                                 "In Commendam, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-f1027e15607625b8fdc5",
+                             "name":  "PARALLAX FIDUCIA, S. A.",
+                             "normalizedName":  "PARALLAX FIDUCIA, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "PARALLAX FIDUCIA, S. A.",
+                                                 "Parallax Fiducia, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-f3dde1b6328a48d214a4",
+                             "name":  "PARTNERS FIDUCIARIOS, S. A.",
+                             "normalizedName":  "PARTNERS FIDUCIARIOS, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "PARTNERS FIDUCIARIOS, S. A.",
+                                                 "Partners Fiduciarios, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-2414aa2787a3c521eaad",
+                             "name":  "SOCIEDAD DAF PARTNERS, S. A.",
+                             "normalizedName":  "SOCIEDAD DAF PARTNERS, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "SOCIEDAD DAF PARTNERS, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2019-12",
+                             "observationCount":  24
+                         },
+                         {
+                             "id":  "sb-36e01ea7f73959f42cd9",
+                             "name":  "VERTEX FIDUCIA, S. A.",
+                             "normalizedName":  "VERTEX FIDUCIA, S. A.",
+                             "category":  "ENTIDADES FIDUCIARIAS",
+                             "sourceNames":  [
+                                                 "VERTEX FIDUCIA, S. A.",
+                                                 "Vertex Fiducia, S. A."
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-04",
+                             "observationCount":  100
+                         },
+                         {
+                             "id":  "sb-4fe949a3007f8d2c3ecd",
+                             "name":  "BANCO AGRICOLA DE LA REPÚBLICA DOMINICANA",
+                             "normalizedName":  "BANCO AGRICOLA DE LA REPÚBLICA DOMINICANA",
+                             "category":  "ENTIDADES PÚBLICAS DE INTERMEDIACIÓN FINANCIERA",
+                             "sourceNames":  [
+                                                 "BANCO AGRICOLA DE LA REPÚBLICA DOMINICANA"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  106
+                         },
+                         {
+                             "id":  "sb-00c9f7c62a618817cdb2",
+                             "name":  "BANCO DE DESARROLLO Y EXPORTACIONES (BANDEX)",
+                             "normalizedName":  "BANCO DE DESARROLLO Y EXPORTACIONES (BANDEX)",
+                             "category":  "ENTIDADES PÚBLICAS DE INTERMEDIACIÓN FINANCIERA",
+                             "sourceNames":  [
+                                                 "BANCO DE DESARROLLO Y EXPORTACIONES (BANDEX)",
+                                                 "Banco de Desarrollo y Exportaciones (BANDEX)"
+                                             ],
+                             "firstObserved":  "2021-07",
+                             "lastObserved":  "2026-09",
+                             "observationCount":  64
+                         },
+                         {
+                             "id":  "sb-b412976cf76c763f3bc4",
+                             "name":  "BANCO NACIONAL DE LAS EXPORTACIONES (BANDEX)",
+                             "normalizedName":  "BANCO NACIONAL DE LAS EXPORTACIONES (BANDEX)",
+                             "category":  "ENTIDADES PÚBLICAS DE INTERMEDIACIÓN FINANCIERA",
+                             "sourceNames":  [
+                                                 "BANCO NACIONAL DE LAS EXPORTACIONES (BANDEX)"
+                                             ],
+                             "firstObserved":  "2018-01",
+                             "lastObserved":  "2021-06",
+                             "observationCount":  42
+                         }
+                     ]
+}

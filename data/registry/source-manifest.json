@@ -1,0 +1,67 @@
+﻿{
+    "schemaVersion":  "1.0.0",
+    "datasetId":  "oquira-sb-institutional-history",
+    "title":  "Dominican Financial Institutional Historical Registry",
+    "publisher":  "Superintendencia de Bancos de la República Dominicana",
+    "sourceUrl":  "https://sb.gob.do/media/f4yh1a2h/listado-de-entidades-autorizadas-a-operar-2018-2026.csv",
+    "sourceFile":  "sb-authorized-entities-2018-2026.csv",
+    "sourceSha256":  "547A8D5C6357D525F93CD6A4F8F1478FEFC0C8ED34E6E0A6EA247FBCE41785DC",
+    "sourceFileSizeBytes":  990399,
+    "fileLastModifiedAt":  "2026-11-24T19:20:46",
+    "downloadedAt":  null,
+    "temporalCoverage":  {
+                             "completeness":  "Partial year; January through September 2026",
+                             "end":  "2026-09",
+                             "start":  "2018-01"
+                         },
+    "processing":  {
+                       "processedHistoryRecords":  11366,
+                       "duplicateRowsConsolidated":  89,
+                       "excludedRows":  1,
+                       "preservedObservations":  11455,
+                       "validRows":  11455,
+                       "historyFile":  "processed/sb-institutional-history.csv",
+                       "catalogFile":  "processed/institutions.json",
+                       "script":  "scripts/registry/build-sb-registry.ps1",
+                       "nominalIdentities":  186,
+                       "originalRows":  11456
+                   },
+    "normalization":  {
+                          "unicodeForm":  "FormKC",
+                          "approximateMatching":  false,
+                          "whitespace":  "Trim and collapse consecutive whitespace",
+                          "case":  "Uppercase invariant",
+                          "legalSuffixesPreserved":  true,
+                          "categoryIncludedInIdentity":  true,
+                          "punctuationPreserved":  true
+                      },
+    "excludedSourceNote":  "Nota de la SB sobre la modificación del listado de fiduciarias a partir del 08/05/2024, relacionada con la Circular CCI-REG-202400006.",
+    "limitations":  [
+                        "The catalog represents normalized nominal identities, not verified legal entities.",
+                        "Names with differences in punctuation, abbreviations or legal suffixes remain separate.",
+                        "Historical presence does not establish current authorization or operational status.",
+                        "The 2026 coverage is partial and ends in September.",
+                        "The source file may contain historical entities and changes in institutional status."
+                    ],
+    "status":  "Initial research dataset; pending independent legal-identity and status verification.",
+    "artifacts":  {
+                      "history":  {
+                                      "file":  "processed/sb-institutional-history.csv",
+                                      "sizeBytes":  985897,
+                                      "sha256":  "CDA01A0B5FBB034CBCCEBA48A42D5BF92F2EF87E0E357BAFF9A61AF69ED3608C"
+                                  },
+                      "catalog":  {
+                                      "file":  "processed/institutions.json",
+                                      "sizeBytes":  144312,
+                                      "sha256":  "0C1D0535BF34C1C6D21C6EA692AB06FDE8EA055A28E24E8F6C5097353F8A73CD"
+                                  }
+                  },
+    "generator":  {
+                      "file":  "scripts/registry/build-sb-registry.ps1",
+                      "sha256":  "54585FD2DB19DD790F647741B9BAC35CD7BE46204904CB7A3BF2B4EF23C25523"
+                  },
+    "generation":  {
+                       "generatedAt":  "2026-11-25T02:04:53Z",
+                       "environment":  "PowerShell"
+                   }
+}
