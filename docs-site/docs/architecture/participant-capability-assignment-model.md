@@ -39,17 +39,18 @@ It does not imply that any particular participant supports it.
 
 ### 2.2 Participant Capability Assignment
 
-A Participant Capability Assignment declares that a participant supports a specific catalog capability under defined conditions.
+A Participant Capability Assignment declares that a participant supports an exact version of a catalog capability under defined conditions.
 
-It associates a capability definition with:
+It associates a specific CapabilityVersion with:
 
 - A participant profile version.
 - An availability status.
-- Applicable products.
-- Supported environments.
-- Required permissions.
-- Applicable policies.
-- Participant-specific configuration.
+- Applicable products through ParticipantCapabilityProduct.
+- Additional participant-specific permission requirements.
+- Applicable policies through ParticipantCapabilityPolicy.
+- Participant-specific configuration through CapabilityConfiguration.
+
+The execution environment is inherited from the associated ParticipantProfileVersion and is not independently declared by the assignment.
 
 ### 2.3 Participant Profile Version
 
@@ -77,7 +78,7 @@ The assignment model follows these principles:
 4. Explicit availability: support and availability conditions must be declared.
 5. Product awareness: capabilities may be associated with one or more products.
 6. Policy separation: policies determine execution conditions without redefining the capability.
-7. Environment awareness: availability may differ between development, testing, and demonstration.
+7. Environment inheritance: assignments inherit the execution environment from their associated participant profile version.
 8. Historical consistency: published assignments remain immutable.
 9. Shared execution: participant differences are configuration-driven, not separate simulation engines.
 
@@ -99,7 +100,7 @@ Participant Profile Version
        +---- Product Association
        +---- Policy References
        +---- Permission Requirements
-       +---- Environment Availability
+       +---- Inherited execution environment
        |
        v
 Simulation Engine
@@ -111,45 +112,52 @@ The same global capability definition may be assigned to many participants.
 
 ## 5. Assignment Structure
 
-Each assignment represents the association between a participant profile version and an exact capability definition version.
+Each assignment represents the association between a participant profile version and an exact CapabilityVersion.
 
 | Attribute | Description |
 |---|---|
 | assignmentId | Unique identifier for the assignment |
-| capabilityId | Stable global capability identifier |
 | capabilityVersionId | Exact immutable CapabilityVersion referenced |
 | profileVersionId | Participant profile version containing the assignment |
 | availabilityStatus | Declared availability |
-| productReferences | Applicable ParticipantProfileProduct references |
-| supportedEnvironments | Environments where the capability is available |
-| configuration | Validated participant-specific parameters |
-| permissionRequirements | Required authorization context |
-| effectiveFrom | Optional effective date |
-| effectiveUntil | Optional expiration date |
-| metadata | Additional descriptive information |
+| configuration | Participant-specific CapabilityConfiguration |
+| requiredPermissions | Additional participant-specific authorization requirements |
 
-Policy associations are maintained through ParticipantCapabilityPolicy rather than embedded as an unstructured list.
+The capability identity is resolved through the referenced CapabilityVersion. ParticipantCapability does not duplicate capabilityId.
 
-The assignment must reference an exact published capability definition version.
+Product associations are maintained through ParticipantCapabilityProduct. Policy associations are maintained through ParticipantCapabilityPolicy rather than embedded as unstructured lists.
 
-Published assignments must not be modified in place. Changes must be represented through a new participant profile version or another explicitly versioned configuration mechanism.
+The execution environment is inherited from the associated ParticipantProfileVersion.
 
-Configuration must not redefine the fundamental meaning or contract of the global capability.
+New assignments eligible for publication must reference an ACTIVE Capability identity and an ACTIVE CapabilityVersion.
+
+A transition of a Capability identity from ACTIVE to DEPRECATED prevents new assignments eligible for publication but does not invalidate previously published assignments. Those assignments may continue to initiate new simulation sessions if their referenced CapabilityVersion permits it.
+
+A transition of a Capability identity to RETIRED prevents new simulation sessions through all assignments referencing that identity, including previously published assignments. Historical simulation records and their exact version references must remain intact.
+
+Published assignments must not be modified in place. Changes must be represented through a new participant profile version.
+
+Participant-specific configuration must not redefine the fundamental meaning of the global capability or weaken its input, output, and authorization contracts.
+
+Assignment effective dates and generic metadata are deferred from v1.
+
 ## 6. Availability Model
 
-The assignment model must distinguish capability support from execution availability.
+ParticipantCapabilityAvailabilityStatus defines the declared availability of a capability within a participant profile version.
 
 The initial availability statuses are:
 
 | Status | Description |
 |---|---|
-| ENABLED | Capability is configured and available for eligible execution |
-| DISABLED | Capability is intentionally unavailable |
-| CONDITIONAL | Capability is available only when specified conditions are satisfied |
-| DEPRECATED | Capability assignment is retained for compatibility but discouraged |
-| UNAVAILABLE | Capability is not currently available in the relevant context |
+| ENABLED | Capability is available subject to applicable permissions, policies, and execution requirements |
+| DISABLED | Capability is explicitly disabled in the participant profile version |
+| CONDITIONAL | Capability is available only when explicitly defined conditions are satisfied |
 
-These statuses describe the participant assignment, not the lifecycle of the global catalog definition.
+These statuses describe assignment availability, not the lifecycle of Capability or CapabilityVersion.
+
+DEPRECATED and RETIRED belong to the CapabilityVersion lifecycle and must not be represented as assignment availability statuses.
+
+Operational unavailability is an execution-time condition and must not be represented as a persistent assignment status.
 
 A capability may be ENABLED but still fail an execution because of a policy, missing permission, product restriction, or invalid input.
 
@@ -188,9 +196,9 @@ Product-specific differences should be expressed through configuration and polic
 
 The architecture must avoid duplicating global capability definitions for each product.
 
-## 9. Environment Availability
+## 9. Execution Environment
 
-A participant may expose different capabilities in different simulation environments.
+The execution environment belongs to ParticipantProfileVersion.
 
 The initial environments are:
 
@@ -200,11 +208,9 @@ The initial environments are:
 | TEST | Functional and integration testing |
 | DEMO | Demonstrations and educational scenarios |
 
-Environment availability must be explicitly declared.
+ParticipantCapability inherits the environment from its associated ParticipantProfileVersion and must not declare an independent list of supported environments.
 
-A capability available in DEMO must not automatically be assumed available in TEST or DEVELOPMENT.
-
-Environment restrictions must be validated by the Simulation Engine.
+The Simulation Engine must validate that the requested execution context uses the environment of the resolved profile version.
 
 ## 10. Policy and Permission References
 
@@ -246,12 +252,18 @@ SimulationSessionPolicy must preserve:
 
 Policies associated with an assignment but not evaluated during a particular execution must not be recorded as evaluated policies.
 
-Permission requirements describe the authorization context required for an operation.
+CapabilityVersion.requiredPermissions defines the global minimum authorization requirements for the capability.
 
-The Policy Evaluator determines whether the supplied context satisfies those requirements. Policy evaluation must remain distinct from the definition of the capability itself.
+ParticipantCapability.requiredPermissions defines additional participant-specific authorization requirements.
+
+The effective authorization requirements must include both sets. Participant-specific requirements may add restrictions but must never remove or weaken global requirements.
+
+The application layer must resolve the effective requirements and provide them to the applicable authorization and policy evaluation mechanisms.
+
+The Policy Evaluator determines whether the supplied context satisfies applicable requirements. Policy evaluation must remain distinct from the definition of the capability itself.
 ## 11. Participant Configuration
 
-Participant-specific configuration allows the same capability to behave differently across institutions.
+Participant-specific configuration allows the same capability to behave differently across participants without redefining its global functional contract.
 
 Examples:
 
@@ -263,11 +275,21 @@ Examples:
 - Available payment channels.
 - Product-specific parameters.
 
-Configuration must be validated against the capability contract.
+The domain model distinguishes three separate value objects:
 
-Configuration must not override mandatory security controls or weaken the global capability contract.
+- CapabilityInputSchema: defines the expected global input structure and contract.
+- CapabilityOutputSchema: defines the expected global output structure and contract.
+- CapabilityConfiguration: represents participant-specific configuration.
 
-The initial implementation should use structured, schema-validated configuration rather than arbitrary executable scripts.
+CapabilityInputSchema and CapabilityOutputSchema belong to CapabilityVersion. CapabilityConfiguration belongs to ParticipantCapability.
+
+These value objects preserve non-empty JSON content. JSON syntax and structural validation must be performed by the application layer, without introducing serialization-framework dependencies into the domain model.
+
+Participant-specific configuration must be validated against the applicable capability contract.
+
+Configuration must not override mandatory security controls, weaken global permission requirements, or redefine the global capability contract.
+
+The initial implementation must use structured configuration rather than arbitrary executable scripts.
 
 ## 12. Assignment Lifecycle
 
@@ -276,18 +298,21 @@ Assignments are managed through participant profile versions.
 The initial lifecycle is:
 
 1. Assignment created in a draft profile.
-2. Capability definition resolved.
-3. Participant configuration provided.
+2. Exact CapabilityVersion resolved.
+3. Participant-specific configuration provided.
 4. Product associations validated.
-5. Policy and permission references validated.
-6. Environment availability configured.
-7. Profile validated.
-8. Profile published.
-9. Assignment becomes immutable within that published version.
+5. Policy references validated.
+6. Global and additional participant-specific permission requirements validated.
+7. Assignment availability and applicable conditions validated.
+8. Profile configuration validated, including its execution environment.
+9. Profile published.
+10. Assignment becomes immutable within that published version.
+
+New assignments eligible for publication must reference an ACTIVE CapabilityVersion.
 
 Changes to a published assignment require a new participant profile version.
 
-The system must preserve the previous version for historical simulation references.
+The system must preserve previous profile versions and their exact capability references for historical simulation traceability.
 
 ## 13. Versioning Rules
 
@@ -324,30 +349,32 @@ Changing one version must not silently alter historical execution context.
 When a simulation request arrives, the engine must:
 
 1. Validate the request structure and required inputs.
-2. Resolve the participant.
-3. Resolve the requested or eligible published profile version.
-4. Create the simulation session with its resolved profile reference.
-5. Find the corresponding capability assignment within that profile version.
-6. Resolve the exact CapabilityVersion referenced by the assignment.
-7. Verify assignment availability and lifecycle eligibility.
-8. Validate environment compatibility.
-9. Validate product associations.
-10. Validate capability input requirements.
-11. Resolve permission requirements and simulated authorization context.
-12. Resolve applicable policy versions through ParticipantCapabilityPolicy.
-13. Evaluate applicable policies in their defined order.
-14. Record every policy version actually evaluated through SimulationSessionPolicy.
-15. Resolve the required SyntheticDatasetVersion references.
-16. Record every dataset version used through SimulationSessionDataset.
-17. Preserve dataset integrity references and generation configuration when applicable.
-18. Construct and freeze the resolved execution context.
-19. Execute the capability through the shared Simulation Engine.
-20. Normalize the result.
-21. Record execution events and the final session outcome.
+2. Resolve the participant and validate its execution eligibility.
+3. Resolve the requested or explicitly selected published profile version and validate its execution environment.
+4. Find the corresponding capability assignment within that profile version.
+5. Resolve the exact CapabilityVersion referenced by the assignment.
+6. Resolve the Capability identity through the referenced CapabilityVersion and validate both lifecycle statuses before session creation. ACTIVE identities permit new assignments and execution through published assignments. DEPRECATED identities permit execution only through previously published assignments, provided the CapabilityVersion permits it. RETIRED identities must be rejected before session creation, including through previously published assignments. Independently, ACTIVE and DEPRECATED CapabilityVersions may initiate sessions through published assignments, while RETIRED versions must be rejected. Historical simulation records must retain their exact version references.
+7. Resolve the execution environment from the associated ParticipantProfileVersion and validate environment compatibility.
+8. Create the SimulationSession with the resolved participant, profile version, assignment, capability version, and execution environment references. The initial session state is CREATED.
+9. Transition the session to VALIDATING and resolve the remaining execution dependencies.
+10. Validate applicable product associations.
+11. Validate requested inputs against CapabilityInputSchema.
+12. Combine CapabilityVersion.requiredPermissions with ParticipantCapability.requiredPermissions and resolve the applicable authorization context.
+13. Resolve applicable policy versions through ParticipantCapabilityPolicy.
+14. Evaluate applicable policies in their defined order.
+15. Evaluate explicit conditions when the assignment availability is CONDITIONAL.
+16. Record every policy version actually evaluated through SimulationSessionPolicy.
+17. Resolve the required SyntheticDatasetVersion references.
+18. Record every dataset version used through SimulationSessionDataset.
+19. Preserve dataset integrity references and generation configuration when applicable.
+20. Construct and freeze the resolved execution context and transition the session to READY.
+21. Transition the session to RUNNING and execute the capability through the shared Simulation Engine.
+22. Validate and normalize the result against CapabilityOutputSchema.
+23. Record execution events and the final session outcome.
 
 The session must preserve the exact participant profile version, capability assignment, capability version, evaluated policy versions, dataset versions, engine version, scenario parameters, environment, and deterministic generation inputs when applicable.
 
-If no valid assignment or required dependency exists, the engine must reject or fail the execution using a standardized error appropriate to the lifecycle stage.
+Requests rejected before session creation must not produce a session identifier. Validation failures after session creation must transition the session to REJECTED. Execution failures must transition the session to FAILED.
 
 The engine must never silently substitute a different published dependency version after the session has resolved its execution context.
 ## 15. Error Conditions
@@ -360,13 +387,27 @@ The initial assignment-related error categories include:
 | CAPABILITY_DISABLED | Assignment is explicitly disabled |
 | CAPABILITY_UNAVAILABLE | Assignment is unavailable in the requested context |
 | CAPABILITY_CONDITION_NOT_MET | Conditional availability requirements were not satisfied |
-| CAPABILITY_VERSION_UNAVAILABLE | Referenced catalog version cannot be resolved |
+| CAPABILITY_VERSION_UNAVAILABLE | Referenced CapabilityVersion cannot be resolved or is not eligible to initiate a new simulation session |
 | PRODUCT_NOT_SUPPORTED | Requested product is not associated with the capability |
 | ENVIRONMENT_NOT_SUPPORTED | Capability is not available in the requested environment |
 | ASSIGNMENT_CONFIGURATION_INVALID | Participant configuration violates the capability contract |
 | POLICY_VERSION_UNAVAILABLE | Referenced policy version cannot be resolved |
 
-Error responses must not expose internal configuration or sensitive information.
+Internal assignment-related errors must be normalized to the public Simulation Engine Error Contract as follows:
+
+| Internal Error Code | Public Error Code |
+|---|---|
+| CAPABILITY_NOT_ASSIGNED | CAPABILITY_NOT_SUPPORTED |
+| CAPABILITY_DISABLED | CAPABILITY_NOT_SUPPORTED |
+| CAPABILITY_UNAVAILABLE | CAPABILITY_NOT_SUPPORTED |
+| CAPABILITY_CONDITION_NOT_MET | CAPABILITY_NOT_SUPPORTED |
+| CAPABILITY_VERSION_UNAVAILABLE | CAPABILITY_VERSION_UNAVAILABLE |
+| PRODUCT_NOT_SUPPORTED | PRODUCT_NOT_SUPPORTED |
+| ENVIRONMENT_NOT_SUPPORTED | ENVIRONMENT_MISMATCH |
+| ASSIGNMENT_CONFIGURATION_INVALID | ASSIGNMENT_CONFIGURATION_INVALID |
+| POLICY_VERSION_UNAVAILABLE | POLICY_VERSION_UNAVAILABLE |
+
+The public error code must communicate the failure category without exposing internal configuration or sensitive information.
 
 ## 16. Relationship with the Domain Data Model
 
@@ -441,7 +482,7 @@ The initial implementation should support:
 3. Assignment validation during profile publication.
 4. Product associations.
 5. Explicit availability statuses.
-6. Environment restrictions.
+6. Execution environment inheritance and validation through ParticipantProfileVersion.
 7. Policy references.
 8. Structured participant configuration.
 9. Immutable published assignments.
@@ -451,18 +492,17 @@ Advanced capability composition and complex conditional rules may be implemented
 
 ## 19. Open Design Questions
 
-The following questions remain open:
+The following questions remain open for future design:
 
 - Should participant assignments use relational configuration tables, JSON configuration, or a hybrid model?
-- How should effective dates interact with immutable profile versions?
-- Should a participant be allowed to publish a profile containing deprecated capability definitions?
-- How should capability dependencies be validated?
 - How should product inheritance work when multiple products share the same capability?
 - How should assignment compatibility be tested after a capability definition changes?
 - Should conditional availability use a standardized expression model?
 - How should profile publication report configuration errors?
 
-These questions must be resolved during detailed domain and technical design.
+Capability dependencies are deferred from v1 and are not part of the initial assignment validation model.
+
+These questions must be resolved during detailed domain and technical design before their corresponding capabilities are implemented.
 
 ## 20. Guiding Principle
 

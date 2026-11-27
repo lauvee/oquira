@@ -1,4 +1,4 @@
-﻿---
+---
 title: Participant and Simulation Model
 description: Common participant architecture and configurable financial institution simulation model
 ---
@@ -66,7 +66,7 @@ A participant has:
 
 ### 3.3 Participant Profile
 
-A Participant Profile defines how a participant behaves in a particular simulation context.
+A Participant Profile defines how a participant behaves in a particular experiment or simulation context.
 
 It may configure:
 
@@ -81,8 +81,11 @@ It may configure:
 - Synthetic data generation.
 - Error and response behavior.
 
-A participant may eventually have multiple profiles for different experiments or versions of its simulated behavior.
+A profile has a stable identity and may contain multiple sequential versions.
 
+Each profile version belongs to one execution environment: DEVELOPMENT, TEST, or DEMO. A published version must be explicitly selected before the profile can execute simulations in that environment. Environments do not need to be configured until they are required.
+
+Published versions are immutable. Changing a published configuration requires a new version. Existing simulation sessions retain the exact version they used.
 ### 3.4 Capability
 
 A Capability describes an operation or function that a participant can expose.
@@ -156,6 +159,8 @@ The initial domain model includes the following concepts:
 - An Institution may be associated with zero or more Participants.
 - A Participant may have one or more Participant Profiles.
 - A Participant Profile may expose multiple Capabilities.
+- A Participant Profile may have multiple versions, each associated with one execution environment.
+- Each profile and environment combination has an explicitly selected published version.
 - A Capability may be shared by different participant categories.
 - A Participant Profile may reference multiple Products and Simulation Policies.
 - A Simulation Session uses a specific Participant Profile.
@@ -188,7 +193,7 @@ Institutional verification and participant activation must be separate processes
 The proposed simulation flow is:
 
 1. A consumer application or authorized client requests a capability.
-2. The platform identifies the participant and active profile.
+2. The platform resolves the participant profile and explicitly selected published version for the requested environment.
 3. The authorization layer validates the requesting client and applicable consent.
 4. The capability resolver checks whether the profile exposes the requested operation.
 5. The simulation engine applies the relevant policies and business rules.
@@ -338,7 +343,6 @@ These are exploration opportunities, not commitments to implement them in the in
 
 The following questions require further design work:
 
-- Should participant profiles be versioned and independently publishable?
 - How should capabilities be grouped into API products?
 - How should participant-specific policies be configured and validated?
 - How should simulation sessions preserve reproducibility?

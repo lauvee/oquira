@@ -40,16 +40,21 @@ A published version cannot be modified. Any change to a published configuration 
 
 ### Environment separation
 
-Profiles may be associated with different environments:
+A participant profile may have published versions for different execution environments:
 
-- Development.
-- Testing.
-- Demonstration.
+- DEVELOPMENT.
+- TEST.
+- DEMO.
 
-Each environment must have an explicitly selected published profile version.
+Each profile version belongs to exactly one environment.
+
+A profile may have one explicitly selected published version for each environment. A selection is required before that profile can execute a simulation in the corresponding environment. The selection must reference a version belonging to that profile and environment.
+
+The system must not infer the selected version simply from the highest version number or most recent publication.
+
+Changing the selected version affects new simulation sessions only. Existing sessions retain their original version reference.
 
 Environment-specific configurations must not be silently mixed.
-
 ### Simulation session reference
 
 Every simulation session must reference:

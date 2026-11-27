@@ -108,6 +108,10 @@ A capability represents a standardized functional ability, such as:
 
 Capabilities must be explicitly configured rather than assumed from the participant's sector.
 
+The Capability Resolver must resolve the exact CapabilityVersion referenced by the participant assignment, resolve its parent Capability identity, and validate both lifecycle statuses before session creation.
+
+ACTIVE Capability identities permit new assignments and execution through published assignments. DEPRECATED identities permit execution only through previously published assignments, provided the CapabilityVersion permits it. RETIRED identities must be rejected before session creation. Independently, ACTIVE and DEPRECATED CapabilityVersions may initiate sessions through published assignments, while RETIRED versions must be rejected, including when referenced by previously published assignments. Identity lifecycle changes must not automatically change version lifecycle statuses.
+
 ### 4.4 Policy Evaluator
 
 Evaluates the policies applicable to an execution.
@@ -165,20 +169,24 @@ Events must contain sufficient context for auditing and debugging without unnece
 The initial execution lifecycle is:
 
 1. Request received.
-2. Request validated.
-3. Simulation session created.
-4. Participant resolved.
-5. Published profile version resolved.
-6. Requested capability validated.
-7. Applicable policies evaluated.
-8. Synthetic dataset resolved.
-9. Execution context constructed.
-10. Simulation executed.
-11. Result normalized.
-12. Execution events recorded.
-13. Simulation response returned.
+2. Request structure and parameters validated.
+3. Participant resolved and its execution eligibility validated.
+4. Exact published profile version resolved and validated against the requested environment. The version must be explicitly selected through ParticipantProfileEnvironmentSelection or explicitly provided and validated in the request.
+5. Requested capability assignment resolved from the selected profile version.
+6. Exact CapabilityVersion and its parent Capability identity resolved. Both lifecycle statuses must permit the requested execution. ACTIVE identities permit new assignments and execution through published assignments. DEPRECATED identities permit execution only through previously published assignments, provided the CapabilityVersion permits it. RETIRED identities must not initiate new simulation sessions, including through previously published assignments. Independently, ACTIVE and DEPRECATED CapabilityVersions may execute through published assignments, while RETIRED versions must not initiate new sessions. These restrictions must not alter historical simulation records or their exact version references. A transition to RETIRED must not automatically interrupt a simulation session that has already entered RUNNING.
+7. Simulation session created with the resolved participant, profile version, assignment, capability version, and execution environment references. The initial session state is CREATED.
+8. Session transitions to VALIDATING while the remaining execution dependencies are resolved and validated.
+9. Product associations, input contract, authorization requirements, consent requirements, applicable policies, and synthetic datasets validated and resolved.
+10. Immutable execution context constructed and session transitions to READY.
+11. Session transitions to RUNNING and the simulation is executed.
+12. Result normalized and execution events recorded.
+13. Session transitions to COMPLETED or FAILED, and the simulation response is returned.
 
-Any validation or execution failure must terminate or transition the session according to its defined state and failure category.
+Requests rejected before session creation must return an appropriate error without a session identifier. Validation failures after session creation must transition the session to REJECTED. Execution failures must transition the session to FAILED.
+
+A session must not be created until its participant, exact profile version, capability assignment, and exact CapabilityVersion have been resolved and validated. Its required references must be populated at creation.
+
+Any subsequent validation or execution failure must be recorded according to the session state model and applicable failure category.
 
 ## 6. Simulation Request Contract
 
@@ -240,7 +248,11 @@ Depending on the operation, a request may include:
 - Correlation identifier.
 - Additional validated context.
 
-When a profile version is omitted, the system must resolve an eligible published version explicitly and record the resolved version.
+When a profile version is explicitly provided in the request, the engine must validate that it belongs to the requested participant profile, matches the execution environment, and has PUBLISHED lifecycle status. If valid, that version is used instead of the configured environment selection.
+
+When a profile version is omitted, the engine must use the version explicitly selected through ParticipantProfileEnvironmentSelection for the requested profile and environment. If no selection exists, the request must be rejected. The engine must not automatically select the latest version or silently substitute another version.
+
+The exact resolved profile version must be recorded in the simulation session. Changes to the environment selection affect new sessions only and must not alter existing sessions.
 
 When dataset selections are omitted, the engine resolves the datasets required by the capability, scenario, and applicable configuration.
 
@@ -409,7 +421,11 @@ Errors must use standardized categories.
 | PARTICIPANT_INACTIVE | Participant cannot execute simulations |
 | PROFILE_NOT_FOUND | Requested profile version does not exist |
 | PROFILE_NOT_PUBLISHED | Profile version is not eligible for execution |
-| CAPABILITY_NOT_SUPPORTED | Participant does not support the requested capability |
+| CAPABILITY_NOT_SUPPORTED | Participant does not support the requested capability, or the assignment is disabled or unavailable |
+| CAPABILITY_VERSION_UNAVAILABLE | Referenced CapabilityVersion cannot be resolved or is not eligible to initiate a new simulation |
+| PRODUCT_NOT_SUPPORTED | Requested product is not associated with the capability assignment |
+| ASSIGNMENT_CONFIGURATION_INVALID | Participant-specific configuration violates the capability contract |
+| POLICY_VERSION_UNAVAILABLE | Referenced policy version cannot be resolved |
 | POLICY_REJECTED | Applicable policy rejected the operation |
 | CONSENT_REQUIRED | Required simulated consent is missing or invalid |
 | DATASET_NOT_FOUND | Required dataset does not exist |

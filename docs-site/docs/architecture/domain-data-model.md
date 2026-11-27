@@ -158,7 +158,7 @@ A real institution may be represented experimentally without having an actual te
 
 ### 3.6 ParticipantProfile
 
-Defines a participant's behavior within an experiment or simulation context.
+Defines a participant's stable configuration identity for experiments or simulation contexts.
 
 | Attribute | Description |
 |---|---|
@@ -166,25 +166,24 @@ Defines a participant's behavior within an experiment or simulation context.
 | participantId | Associated participant |
 | profileCode | Profile classification or name |
 | description | Profile purpose |
-| environment | Development, test, or demonstration |
-| currentPublishedVersionId | Reference to active published version |
 | createdAt | Creation timestamp |
 
-A participant may have multiple profiles for different scenarios or environments.
+A participant may have multiple profiles for different scenarios or purposes.
 
-Each profile belongs to a defined environment or simulation context. For example, a participant may have a separate profile for testing and another for demonstrations.
+A profile may have versions associated with different execution environments. The environment is defined by each version, not by the profile identity.
 
-Each profile has one current published version. Previous versions remain available for historical reproducibility.
+The selected published version for each configured environment is maintained separately through ParticipantProfileEnvironmentSelection. A selection is required before the profile can execute simulations in that environment.
 
 ### 3.7 ParticipantProfileVersion
 
-Represents an immutable version of a participant profile.
+Represents a version of a participant profile for one execution environment.
 
 | Attribute | Description |
 |---|---|
 | profileVersionId | Unique version identifier |
 | profileId | Parent profile |
-| versionNumber | Sequential version number |
+| versionNumber | Sequential version number within the profile |
+| environment | DEVELOPMENT, TEST, or DEMO |
 | configuration | Validated configuration document |
 | lifecycleStatus | Draft, published, deprecated, or withdrawn |
 | createdAt | Creation timestamp |
@@ -192,13 +191,30 @@ Represents an immutable version of a participant profile.
 | createdBy | Author or responsible system identity |
 | changeSummary | Description of changes |
 
-Published versions must not be silently modified.
+Each version belongs to exactly one profile and one execution environment.
 
-A change to published configuration creates a new version.
+Draft versions may be modified before publication. Published versions must not be silently modified. A change to published configuration creates a new version.
 
 Simulation sessions must reference the exact profile version used during execution.
+### 3.8 ParticipantProfileEnvironmentSelection
 
-### 3.8 Product
+Identifies the published profile version explicitly selected for an execution environment.
+
+| Attribute | Description |
+|---|---|
+| selectionId | Unique selection identifier |
+| profileId | Associated participant profile |
+| environment | Selected execution environment |
+| profileVersionId | Selected published profile version |
+
+A profile may have at most one selection for each environment. Environments do not need to be configured until they are required.
+
+The selected version must belong to the same profile and environment, and must have PUBLISHED lifecycle status. Deprecated and withdrawn versions cannot be selected for new sessions.
+
+Version selection is explicit. The system must not automatically select the latest version.
+
+Changing a selection affects new simulation sessions only. Existing sessions retain their original profile version reference.
+### 3.9 Product
 
 Represents the stable identity of a financial product or service offered by a participant.
 
@@ -229,7 +245,7 @@ Products are participant-specific.
 
 Product identity is separate from its configuration within a published participant profile version. Version-specific product configuration is represented by ParticipantProfileProduct.
 
-### 3.9 Capability
+### 3.10 Capability
 
 Represents a stable, reusable financial operation or data-access function in the global capability catalog.
 
@@ -240,37 +256,48 @@ Represents a stable, reusable financial operation or data-access function in the
 | name | Human-readable name |
 | domain | Functional domain |
 | description | General functional definition |
-| lifecycleStatus | Catalog lifecycle status |
+| lifecycleStatus | ACTIVE, DEPRECATED, or RETIRED; lifecycle status of the global capability identity |
 
 Capability definitions must not be duplicated for individual participants.
 
-The functional contract of a capability is maintained through CapabilityVersion.
+The functional contract of a capability is maintained through CapabilityVersion. The lifecycle of the capability identity is distinct from the lifecycle of its individual versions.
 
-### 3.10 CapabilityVersion
+An ACTIVE capability may receive new versions and new assignments eligible for publication.
 
-Represents an immutable version of a capability definition.
+A DEPRECATED capability cannot receive new assignments eligible for publication. Existing published assignments may continue to execute if their referenced CapabilityVersion permits it.
+
+A RETIRED capability cannot receive new versions or assignments and must not initiate new simulation sessions, including through previously published assignments.
+
+Changes to a capability identity lifecycle status must not automatically change the lifecycle status of its CapabilityVersions or alter historical simulation references. Transitioning a capability to RETIRED must not automatically interrupt sessions that have already entered RUNNING.
+
+### 3.11 CapabilityVersion
+
+Represents an immutable version of a capability definition and its functional contract.
 
 | Attribute | Description |
 |---|---|
 | capabilityVersionId | Unique version identifier |
 | capabilityId | Parent capability |
-| versionNumber | Semantic version |
-| inputSchema | Expected input structure |
-| outputSchema | Expected output structure |
-| executionMode | Synchronous or asynchronous |
-| requiredPermissions | Required authorization context |
-| dependencies | Capability or domain dependencies |
+| versionNumber | Semantic version (major.minor.patch) |
+| inputSchema | Expected input structure and contract |
+| outputSchema | Expected output structure and contract |
+| executionMode | Synchronous or asynchronous execution |
+| requiredPermissions | Global minimum authorization requirements |
 | dataClassification | Applicable data classification |
-| lifecycleStatus | Draft, proposed, active, deprecated, or retired |
-| publishedAt | Publication timestamp |
+| lifecycleStatus | DRAFT, PROPOSED, ACTIVE, DEPRECATED, or RETIRED |
+| publishedAt | Publication timestamp, when applicable |
+
+The input and output schemas are distinct contracts. Participant-specific configuration is maintained separately through ParticipantCapability.
 
 A published capability version must remain immutable.
 
 Breaking changes to input, output, or execution semantics require a new major version.
 
-Participant assignments must reference an exact CapabilityVersion.
+New participant assignments eligible for publication must reference an ACTIVE CapabilityVersion. Historical versions remain identifiable for existing assignments and simulation traceability.
 
-### 3.11 ParticipantProfileProduct
+Capability dependencies are deferred from v1 and are not part of the initial versioned contract model.
+
+### 3.12 ParticipantProfileProduct
 
 Associates a product with a specific participant profile version.
 
@@ -286,29 +313,34 @@ This entity preserves product configuration as part of the immutable profile ver
 
 A product may have different configurations across participant profile versions.
 
-### 3.12 ParticipantCapability
+### 3.13 ParticipantCapability
 
-Associates a capability version with a specific participant profile version.
+Associates an exact global capability version with a specific participant profile version.
 
 | Attribute | Description |
 |---|---|
 | assignmentId | Unique assignment identifier |
 | profileVersionId | Participant profile version |
 | capabilityVersionId | Exact global capability version |
-| availabilityStatus | ENABLED, DISABLED, CONDITIONAL, DEPRECATED, or UNAVAILABLE |
-| supportedEnvironments | Supported execution environments |
+| availabilityStatus | ENABLED, DISABLED, or CONDITIONAL |
 | configuration | Participant-specific capability configuration |
-| requiredPermissions | Required authorization context |
-| effectiveFrom | Optional effective date |
-| effectiveUntil | Optional expiration date |
+| requiredPermissions | Additional participant-specific authorization requirements |
 
-The assignment determines whether and under which conditions a profile supports a capability.
+The capability identity is resolved through the referenced CapabilityVersion. The assignment does not duplicate capabilityId.
+
+The execution environment is inherited from the associated ParticipantProfileVersion. An assignment cannot declare a different supported environment.
+
+CapabilityVersion.requiredPermissions defines the global minimum authorization requirements. ParticipantCapability.requiredPermissions adds participant-specific requirements. The effective requirements must include both sets; assignment-specific configuration must never weaken or remove global requirements.
+
+CONDITIONAL availability requires explicit conditions to be evaluated through the assignment configuration and applicable policy associations.
 
 The absence of an assignment must never imply support.
 
+Assignment effective dates and generic metadata are deferred from v1.
+
 Published assignments are immutable because they belong to an immutable profile version.
 
-### 3.13 ParticipantCapabilityProduct
+### 3.14 ParticipantCapabilityProduct
 
 Associates a capability assignment with one or more products available in the same profile version.
 
@@ -323,7 +355,7 @@ A capability that is not product-specific may have no product association.
 
 The referenced product association must belong to the same participant profile version as the capability assignment.
 
-### 3.14 SimulationPolicy
+### 3.15 SimulationPolicy
 
 Represents the stable identity of a reusable policy governing simulated behavior.
 
@@ -350,7 +382,7 @@ Policy identity is independent of its individual rule configurations.
 
 Policy configurations are maintained through SimulationPolicyVersion.
 
-### 3.15 SimulationPolicyVersion
+### 3.16 SimulationPolicyVersion
 
 Represents an immutable version of a simulation policy.
 
@@ -368,7 +400,7 @@ Published policy versions must remain immutable.
 
 A simulation must preserve the exact policy versions evaluated during execution.
 
-### 3.16 ParticipantCapabilityPolicy
+### 3.17 ParticipantCapabilityPolicy
 
 Associates policy versions with participant capability assignments.
 
@@ -385,7 +417,7 @@ Policy references must identify exact versions.
 
 Policy evaluation remains the responsibility of the Policy Evaluator, not the capability definition.
 
-### 3.17 SyntheticDataset
+### 3.18 SyntheticDataset
 
 Represents the stable identity of a controlled collection of synthetic financial data.
 
@@ -402,7 +434,7 @@ Dataset identity is separate from individual dataset versions.
 
 Datasets must never be presented as real customer records.
 
-### 3.18 SyntheticDatasetVersion
+### 3.19 SyntheticDatasetVersion
 
 Represents an immutable version of a synthetic dataset.
 
@@ -421,7 +453,7 @@ Published dataset versions must remain identifiable and immutable.
 
 The content checksum supports integrity verification and reproducibility.
 
-### 3.19 SimulationSessionDataset
+### 3.20 SimulationSessionDataset
 
 Associates a simulation session with one or more exact dataset versions.
 
@@ -435,7 +467,7 @@ A simulation may use multiple datasets.
 
 Each dataset reference must identify its exact version.
 
-### 3.20 SimulationSessionPolicy
+### 3.21 SimulationSessionPolicy
 
 Records a policy version actually evaluated during a simulation session.
 
@@ -461,26 +493,32 @@ A session may evaluate multiple policy versions.
 
 The evaluation result must not contain credentials, secrets, or unnecessary sensitive information.
 
-### 3.21 SimulationSession
+### 3.22 SimulationSession
 Represents one execution context for an experiment.
+
+A session is created only after the participant, exact published profile version, capability assignment, exact CapabilityVersion, and execution environment have been resolved and validated.
 
 | Attribute | Description |
 |---|---|
 | sessionId | Unique simulation identifier |
-| participantId | Participant being simulated |
-| profileVersionId | Exact published profile version |
-| assignmentId | Capability assignment used |
-| capabilityVersionId | Exact capability definition version |
-| environment | Execution environment |
-| scenarioCode | Scenario identifier |
+| participantId | Resolved participant; required at creation |
+| profileVersionId | Exact published profile version; required at creation |
+| assignmentId | Exact capability assignment; required at creation |
+| capabilityVersionId | Exact capability definition version; required at creation |
+| environment | Execution environment inherited from the resolved profile version; required at creation |
+| scenarioCode | Scenario identifier, when applicable |
 | engineVersion | Engine implementation version |
 | randomSeed | Seed when deterministic generation applies |
 | simulatedAt | Controlled simulation timestamp |
-| status | Created, running, completed, failed, or other defined state |
+| status | CREATED, VALIDATING, READY, RUNNING, COMPLETED, FAILED, REJECTED, or CANCELLED |
 | startedAt | Actual execution start timestamp |
 | completedAt | Actual execution completion timestamp |
 | initiatedBy | Requesting user or application identity |
 | correlationId | Request correlation reference |
+
+The initial session status is CREATED. The orchestration component controls subsequent state transitions according to the Simulation Engine lifecycle.
+
+A request rejected before session creation does not produce a SimulationSession. A validation failure after creation must result in REJECTED. An execution failure must result in FAILED.
 
 A session must preserve the resolved dependency references and execution configuration.
 
@@ -490,7 +528,7 @@ Dataset versions are preserved through SimulationSessionDataset.
 
 A session must never silently change its resolved dependencies after creation.
 
-### 3.22 SimulationEvent
+### 3.23 SimulationEvent
 Records relevant events generated during a simulation session.
 
 | Attribute | Description |
@@ -546,6 +584,8 @@ erDiagram
 
     PARTICIPANT ||--o{ PARTICIPANT_PROFILE : configures
     PARTICIPANT_PROFILE ||--o{ PROFILE_VERSION : versions
+    PARTICIPANT_PROFILE ||--o{ PROFILE_ENVIRONMENT_SELECTION : selects_for
+    PROFILE_VERSION ||--o| PROFILE_ENVIRONMENT_SELECTION : selected_as
     PARTICIPANT ||--o{ PRODUCT : offers
 
     PROFILE_VERSION ||--o{ PROFILE_PRODUCT : contains
